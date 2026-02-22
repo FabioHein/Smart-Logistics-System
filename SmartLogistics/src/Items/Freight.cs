@@ -9,13 +9,13 @@ namespace SmartLogistics.src.Items
         private double _weight;
         private string _id;
 
-        public double Weight { get { return _weight; } }
-        public string Id { get { return _id; } }
+        public double Weight { get { return _weight; } set { _weight = value; } }
+        public string Id { get { return _id; } set { _id = value; } }
 
         public Freight(string id, double weight)
         {
-            _id = id;
-            _weight = weight;
+            Id = id;
+            Weight = weight;
         }
     }
 }
