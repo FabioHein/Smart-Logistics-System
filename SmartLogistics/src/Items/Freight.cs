@@ -6,8 +6,11 @@ namespace SmartLogistics.src.Items
 {
     public abstract class Freight
     {
-        public double _weight { get; protected set; }
-        public string _id { get; protected set; }
+        private double _weight;
+        private string _id;
+
+        public double Weight { get { return _weight; } }
+        public string Id { get { return _id; } }
 
         public Freight(string id, double weight)
         {
