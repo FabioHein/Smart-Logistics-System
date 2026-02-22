@@ -4,7 +4,11 @@ using System.Text;
 
 namespace SmartLogistics.src.Enums
 {
-    internal class HazardClass
+    internal enum HazardClass
     {
+        None,
+        Flammable,
+        Toxic,
+        Explosiv
     }
 }
