@@ -4,7 +4,8 @@ using System.Text;
 
 namespace SmartLogistics.src.Interfaces
 {
-    internal class IHeavyLoad
+    public interface IHeavyLoad
     {
+        void SecureWithChains();
     }
 }
