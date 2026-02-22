@@ -10,10 +10,11 @@ namespace SmartLogistics.src.Items
     public class ChemicalDrum : Freight, IRefrigerated
     {
 
+       private HazardClass _hazard;
 
-
-        public ChemicalDrum(string id, double weight) : base(id , weight)
+        public ChemicalDrum(string id, double weight, HazardClass hazard) : base(id , weight)
         {
+            _hazard = hazard;
         }
 
         public void CheckTemperature()
