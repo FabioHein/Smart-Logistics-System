@@ -10,13 +10,15 @@ namespace SmartLogistics.src.Items
     public class ChemicalDrum : Freight, IRefrigerated
     {
 
+
+
         public ChemicalDrum(string id, double weight) : base(id , weight)
         {
         }
 
         public void CheckTemperature()
         {
-            Console.WriteLine($"Die Temperatur wurde geprüft.");
+            Console.WriteLine($"Fass {Id}: Kühlung Stabil.");
         }
     }
 }
