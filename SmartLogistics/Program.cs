@@ -10,6 +10,8 @@ fracht.Add(new ChemicalDrum("00-25", 250, HazardClass.Toxic));
 
 foreach(var palette in fracht)
 {
+    palette.GetLoadingInstruction();
+
     if (palette is IHeavyLoad e)
     {
         e.SecureWithChains();
