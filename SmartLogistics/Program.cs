@@ -2,7 +2,9 @@
 using SmartLogistics.src.Enums;
 using System.Globalization;
 using SmartLogistics.src.Interfaces;
+using SmartLogistics.src.Services;
 
+var kisten = new LoadingStation();
 List<Freight> fracht = new List<Freight>();
 
 fracht.Add(new SteelBeam("HEB 240", 800));
@@ -21,3 +23,8 @@ foreach(var palette in fracht)
         a.CheckTemperature();
     }
 }
+double ergebniss = kisten.LoadingMath(fracht);
+
+
+Console.WriteLine($"Die Fracht hat {ergebniss}kg.");
+
