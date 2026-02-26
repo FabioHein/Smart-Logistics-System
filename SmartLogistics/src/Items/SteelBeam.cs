@@ -11,6 +11,11 @@ namespace SmartLogistics.src.Items
         {
         }
 
+        public override void GetLoadingInstruction()
+        {
+            Console.WriteLine($"Der Stahlträger {Id} muss liegend Transportiert werden.");
+        }
+
         
         public void SecureWithChains()
         {

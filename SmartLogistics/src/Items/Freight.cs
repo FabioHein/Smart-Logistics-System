@@ -12,6 +12,8 @@ namespace SmartLogistics.src.Items
         public double Weight { get { return _weight; } set { _weight = value; } }
         public string Id { get { return _id; } set { _id = value; } }
 
+        public abstract void GetLoadingInstruction();
+
         public Freight(string id, double weight)
         {
             Id = id;

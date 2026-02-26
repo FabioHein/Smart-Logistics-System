@@ -17,6 +17,11 @@ namespace SmartLogistics.src.Items
             _hazard = hazard;
         }
 
+        public override void GetLoadingInstruction()
+        {
+            Console.WriteLine($"Das Fass {Id} muss stehend Transportiert werden.");
+        }
+
         public void CheckTemperature()
         {
             Console.WriteLine($"Fass {Id}: Kühlung Stabil.");
